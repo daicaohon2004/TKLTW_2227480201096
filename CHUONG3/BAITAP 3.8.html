@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <STYle>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  background: rgb(0, 153, 255);
+}
+.menu > li {
+  position: relative;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: rgb(40, 11, 168);
+  padding: 10px 20px;
+}
+.menu a:hover {
+  background-color: gray;
+}
+.menu-con-kh,
+.menu-con-bv {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+.menu > li:hover > .menu-con-kh,
+.menu > li:hover > .menu-con-bv {
+  display: block;
+}
+.menu-con-kh ul,
+.menu-con-bv ul,
+.submenu {
+  list-style: none;
+}
+.menu-con-kh a,
+.menu-con-bv a,
+.submenu a {
+  display: block;
+  padding: 10px 20px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+.menu-con-kh li:hover > .submenu {
+  display: block;
+}
+
+    </STYle>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3.8</title>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="">Trang Chủ</a></li>
+      <li><a href="">Giới Thiệu</a></li>
+      <li class="menu-cha-kh">
+        <a href="">Khoá Học</a>
+        <div class="menu-con-kh">
+          <ul>
+            <li>
+              <a href="">Tin học căn bản</a>
+              <ul class="submenu">
+                <li><a href="">Microsoft Word 2010</a></li>
+                <li><a href="">Microsoft Excel 2010</a></li>
+                <li><a href="">Microsoft Powerpoint 2010</a></li>
+              </ul>
+            </li>
+            <li><a href="">Tin học phổ thông</a></li>
+            <li><a href="">Lập trình Pascal</a></li>
+            <li><a href="">Lập trình C</a></li>
+            <li><a href="">Thiết kế Website</a></li>
+            <li><a href="">Vẽ kỹ thuật AutoCAD</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu-cha-bv">
+        <a href="">Bài Viết</a>
+        <div class="menu-con-bv">
+          <ul>
+            <li><a href="">Ban Quản Lý</a></li>
+            <li><a href="">Hiệu Trưởng</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
