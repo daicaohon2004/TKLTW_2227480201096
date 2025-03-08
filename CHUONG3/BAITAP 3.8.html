@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
   <head>
     <STYle>
 * {
@@ -28,8 +28,8 @@
 .menu a:hover {
   background-color: gray;
 }
-.menu-con-kh,
-.menu-con-bv {
+.kh,
+.bv{
   display: none;
   position: absolute;
   top: 100%;
@@ -38,17 +38,17 @@
   border: 1px solid #ccc;
   z-index: 100;
 }
-.menu > li:hover > .menu-con-kh,
-.menu > li:hover > .menu-con-bv {
+.menu > li:hover > .kh,
+.menu > li:hover > .bv{
   display: block;
 }
-.menu-con-kh ul,
-.menu-con-bv ul,
+.kh ul,
+.bv ul,
 .submenu {
   list-style: none;
 }
-.menu-con-kh a,
-.menu-con-bv a,
+.kh a,
+.bv a,
 .submenu a {
   display: block;
   padding: 10px 20px;
@@ -64,7 +64,7 @@
   border: 1px solid #ccc;
   z-index: 100;
 }
-.menu-con-kh li:hover > .submenu {
+.kh li:hover > .submenu {
   display: block;
 }
 
@@ -77,9 +77,9 @@
     <ul class="menu">
       <li><a href="">Trang Chủ</a></li>
       <li><a href="">Giới Thiệu</a></li>
-      <li class="menu-cha-kh">
+      <li class="menu-kh">
         <a href="">Khoá Học</a>
-        <div class="menu-con-kh">
+        <div class="kh">
           <ul>
             <li>
               <a href="">Tin học căn bản</a>
@@ -97,9 +97,9 @@
           </ul>
         </div>
       </li>
-      <li class="menu-cha-bv">
+      <li class="menu-bv">
         <a href="">Bài Viết</a>
-        <div class="menu-con-bv">
+        <div class="bv">
           <ul>
             <li><a href="">Ban Quản Lý</a></li>
             <li><a href="">Hiệu Trưởng</a></li>
