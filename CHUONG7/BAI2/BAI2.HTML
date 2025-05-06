@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhân Sự - Trường Đại Học Bạc Liêu</title>
+    <link rel="stylesheet" href="BAI2.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+    <img src="LogoTruong.jpg" width=250 height= 120 alt="LogoTruong.jpg" class="p">
+        <h1>QUẢN LÝ <br> NHÂN SỰ</h1> 
+    </div>
+
+    <div class="nav">
+        
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Đơn vị trực thuộc</h3>
+            <ul>
+                <li><a href="https://kythuatcongnghe.blu.edu.vn/">Khoa KT & CN</a></li>
+                <li><a href="https://supham.blu.edu.vn/">Khoa Sư phạm</a></li>
+                <li><a href="https://nongnghiepthuysan.blu.edu.vn">Khoa NN&TS</a></li>
+                <li><a href="https://kinhteluat.blu.edu.vn/">Khoa Kinh tế và Luật</a></li>
+            </ul>
+            <h3>Hỗ trợ nhân viên</h3>
+            <ul>
+                <li><a href="">Xem hồ sơ</a></li>
+                <li><a href="">Thêm hồ sơ</a></li>
+                <li><a href="">Sửa hồ sơ</a></li>
+                <li><a href="">Xóa hồ sơ</a></li>
+                <li><a href="">Tìm kiếm hồ sơ</a></li>
+            </ul>
+            <h3>Quản lý tiền lương</h3>
+            <ul>
+                <li><a href="">Bảng lương</a></li>
+                <li><a href="">Cập nhật hồ sơ</a></li>
+                <li><a href="">Tìm kiếm</a></li>
+                <li><a href="#">Tính lương</a></li>
+                <li><a href="#">Tính thưởng</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Tên tiếng Anh: BAC LIEU UNIVERSITY</h2>
+            <h3>Tên viết tắt: Tên viết tắt – DHBL – Tiếng Anh BLU</h3>
+            <p>Trường DHBL (DHBL) là trường đại học công lập, là cơ sở giáo dục đại học đa ngành, đa hệ, được thành lập theo Quyết định số 1558/QĐ-TTg ngày 24/11/2006 của Thủ tướng Chính phủ. Việc thành lập Trường DHBL là phù hợp theo ý chí, nguyện vọng của Đảng bộ và nhân dân Bạc Liêu, đáp ứng yêu cầu đào tạo và phát triển nguồn nhân lực chất lượng cao, phục vụ sự nghiệp công nghiệp hóa, hiện đại hóa của Bạc Liêu và vùng Bán đảo Cà Mau.</p>
+            
+            <h3>I. CHỨC NĂNG</h3>
+            <p><strong>Về đào tạo:</strong> Tổ chức đào tạo đa dạng các cấp trình độ từ cao đẳng đến đại học, liên kết với các cơ sở giáo dục trong nước và quốc tế nhằm đào tạo các loại hình trình độ cao hơn nhằm đáp ứng nhu cầu đào tạo ngày càng cao và khắc phục được tình trạng thiếu hụt nhân lực chất lượng cao của vùng Bán đảo Cà Mau.</p>
+            <p><strong>Về khoa học công nghệ:</strong> Tổ chức nghiên cứu khoa học định hướng ứng dụng, chú trọng nghiên cứu các lĩnh vực có thế mạnh và phù hợp với yêu cầu phát triển kinh tế - xã hội của địa phương và vùng; thực hiện các dịch vụ khoa học công nghệ.
+            <br><img src="truong-dai-hoc-bac-lieu-800-173359.jpg" width=300 height= 150 alt="LogoTruong.jpg" class="">
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>TRƯỜNG ĐẠI HỌC BẠC LIÊU</p>
+        <p>Chất lượng – Sáng tạo – Trách nhiệm – Hội nhập</p>
+        <p>Điện thoại: 0291.3822653 | Email: mail@blu.edu.vn</p>
+        <p>Địa chỉ: Số 178 đường Võ Thị Sáu, P. 8, TP. Bạc Liêu, Tỉnh Bạc Liêu</p>
+        <script>
+    //toggles (có “s”) là biến chứa mảng các nút cần lắng nghe sự kiện.
+    //toggle (không “s”) là tên phương thức để bật/tắt một class trên classList.
+    var toggles = document.querySelectorAll('.submenu-toggle');
+    for (var i = 0; i < toggles.length; i++){
+        toggles[i].addEventListener('click', function(event){
+            event.preventDefault(); //ngăn hành vi mặc định (ví dụ link nhảy trang).
+            this.parentElement.classList.toggle('submenu-active'); //this.parentElement là thẻ cha (ví dụ <li> chứa link).
+        });
+    }
+  </script>
+    </div>
+
+</body> 
+</html>
